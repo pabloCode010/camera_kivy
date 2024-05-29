@@ -1,0 +1,15 @@
+#:kivy 2.3.0
+
+<CameraWidget>:
+    Camera:
+        id: camera
+        play: True
+        width: root.width
+        height: 3 * (root.height/4)
+        center: root.center
+    
+    Button:
+        top: 100
+        center_x: root.center_x
+        text: "capture"
+        on_press: root.capture()
