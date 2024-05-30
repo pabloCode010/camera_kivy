@@ -15,9 +15,18 @@
         canvas.after:
             PopMatrix
     
-    Button:
-        top: 100
-        size: 150, 70
-        center_x: root.center_x
-        text: "capture"
-        on_press: root.capture()
+    FloatLayout:
+        width: root.width
+        
+        Button:
+            size_hint: None, None
+            size: 150, 70
+            pos_hint: {"center_x": 0.5, "y": 0.05}
+            text: "capture"
+            on_press: root.capture()
+    
+        Button:
+            size_hint: None, None
+            size: 150, 70
+            pos_hint: {"right": 1, "y": 0.05}
+            text: "galery"
