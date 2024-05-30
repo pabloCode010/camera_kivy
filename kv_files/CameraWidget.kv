@@ -16,17 +16,21 @@
             PopMatrix
     
     FloatLayout:
+        id:  buttons
         width: root.width
+        height: root.height / 10
         
         Button:
             size_hint: None, None
             size: 150, 70
-            pos_hint: {"center_x": 0.5, "y": 0.05}
+            center_x: buttons.center_x
+            center_y: buttons.center_y
             text: "capture"
             on_press: root.capture()
     
         Button:
             size_hint: None, None
             size: 150, 70
-            pos_hint: {"right": 1, "y": 0.05}
+            right: buttons.right
+            center_y: buttons.center_y
             text: "galery"
