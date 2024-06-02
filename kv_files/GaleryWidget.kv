@@ -1,84 +1,9 @@
-#:kivy 2.3.0
-
 <GaleryWidget>:
     ScrollView:
         size: root.size
 
         BoxLayout:
+            id: container
             orientation: "vertical"
             size_hint_y: None
             height: self.minimum_height
-            
-            Label:
-                text: "29 May"
-                size_hint_y: None
-                height: 100
-
-            GridLayout:
-                id: images_grid
-                size_hint_y: None
-                height: self.minimum_height
-                spacing: 10
-                cols: max(1, (root.width - (root.width // 200 - 1) * 10) // 200)
-                
-                Image:
-                    source: "image.png"
-                    size_hint: 1 / images_grid.cols, None
-                    height: self.width
-                
-                Image:
-                    source: "image.png"
-                    size_hint: 1 / images_grid.cols, None
-                    height: self.width
-                
-                Image:
-                    source: "image.png"
-                    size_hint: 1 / images_grid.cols, None
-                    height: self.width
-                
-                Image:
-                    source: "image.png"
-                    size_hint: 1 / images_grid.cols, None
-                    height: self.width
-                
-                Image:
-                    source: "image.png"
-                    size_hint: 1 / images_grid.cols, None
-                    height: self.width
-            
-            Label:
-                text: "29 May"
-                size_hint_y: None
-                height: 100
-
-            GridLayout:
-                id: images_grid
-                size_hint_y: None
-                height: self.minimum_height
-                spacing: 10
-                cols: max(1, (root.width - (root.width // 200 - 1) * 10) // 200)
-                
-                Image:
-                    source: "image.png"
-                    size_hint: 1 / images_grid.cols, None
-                    height: self.width
-                
-                Image:
-                    source: "image.png"
-                    size_hint: 1 / images_grid.cols, None
-                    height: self.width
-                
-                Image:
-                    source: "image.png"
-                    size_hint: 1 / images_grid.cols, None
-                    height: self.width
-                
-                Image:
-                    source: "image.png"
-                    size_hint: 1 / images_grid.cols, None
-                    height: self.width
-                
-                Image:
-                    source: "image.png"
-                    size_hint: 1 / images_grid.cols, None
-                    height: self.width

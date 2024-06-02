@@ -1,0 +1,16 @@
+<DailyPhotosLayout>:
+    orientation: "vertical"
+    size_hint_y: None
+    height: self.minimum_height
+
+    Label:
+        id: label_date
+        size_hint_y: None
+        height: 100
+
+    GridLayout:
+        id: photos_grid
+        size_hint_y: None
+        height: self.minimum_height
+        spacing: 10
+        cols: max(1, (root.width - (root.width // 200 - 1) * 10) // 200)
