@@ -1,11 +1,11 @@
-#:kivy 2.3.0
-
 <CameraWidget>:
     Camera:
         id: camera
         play: True
         height: root.width
         width: 4 * (root.height / 5)
+        allow_stretch: True
+        keep_ratio: False
         center: root.center
         canvas.before:
             PushMatrix
