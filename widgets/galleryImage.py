@@ -1,4 +1,4 @@
 from kivy.uix.image import Image
 
-class GaleryImage(Image):
+class GalleryImage(Image):
     pass

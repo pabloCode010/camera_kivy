@@ -14,7 +14,7 @@ def group_by_date(img_files) -> dict:
     
     return groups
 
-class GaleryWidget(Widget):
+class GalleryWidget(Widget):
     def load_daily_photos(self):
         container = self.ids["container"]
         

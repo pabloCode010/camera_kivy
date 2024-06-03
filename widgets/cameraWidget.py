@@ -15,8 +15,8 @@ class CameraWidget(Widget):
     
     def switch_to_gallery(self):
         app = App.get_running_app()
-        app.root.current = "galery"
+        app.root.current = "gallery"
 
-        galery_widget = app.root.ids["galery_widget"]
-        galery_widget.ids["container"].clear_widgets()
-        galery_widget.load_daily_photos()
+        gallery_widget = app.root.ids["gallery_widget"]
+        gallery_widget.ids["container"].clear_widgets()
+        gallery_widget.load_daily_photos()
