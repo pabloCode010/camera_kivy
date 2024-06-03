@@ -3,3 +3,10 @@
     height: self.width
     allow_stretch: True
     keep_ratio: False
+
+    canvas.before:
+        Color:
+            rgba: 0.5, 0.5, 0.5, 0.5
+        Rectangle:
+            pos: self.pos
+            size: self.size

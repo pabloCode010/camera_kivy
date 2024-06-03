@@ -17,9 +17,5 @@ class CameraApp(App):
 		screen_manager = Builder.load_file("screen_manager.kv")
 		return screen_manager
 
-	def on_start(self):
-		galery_widget = self.root.ids["galery_widget"]
-		galery_widget.load_daily_photos()
-
 if __name__ == "__main__":
 	CameraApp().run()
