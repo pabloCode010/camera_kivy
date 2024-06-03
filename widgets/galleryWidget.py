@@ -23,8 +23,9 @@ class GalleryWidget(Widget):
 
         img_files = os.listdir("./pictures")
         grouped_files = group_by_date(img_files)
+        sorted_dates = sorted([date for date in grouped_files.keys()], reverse=True)
 
-        for date in grouped_files:
+        for date in sorted_dates:
             photos_layout = DailyPhotosLayout()
             daily_photos = grouped_files[date]
 
